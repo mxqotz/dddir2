@@ -1,0 +1,15 @@
+# 客户端/登录器安装包（体积大且会频繁更新，不应入库）
+*.exe
+*.zip
+*.rar
+*.7z
+up/
+
+# 临时与备份文件
+*.tmp
+*.bak
+Thumbs.db
+desktop.ini
+
+# 系统文件
+.DS_Store
