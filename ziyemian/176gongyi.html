@@ -24,9 +24,29 @@
     <h2>公平，公正，散人友好</h2>
     <h2>敬请期待</h2>
     <br>
-    <h2>微端下载：<a href="https://wwbms.lanzoub.com/i3y5C46pueuf" target="_blank">点击下载</a></h2>
+    <h2>微端下载：<a href="https://wwbms.lanzoub.com/i1CmZ475rncj" target="_blank">点击下载</a></h2>
     <br>
     <h2>下载密码：dy92</h2>
 
+
+
 </body>
 </html>
+
+<script>
+document.addEventListener('DOMContentLoaded', async () => {
+  const hashKey = 'page_hash_wzxpcq';
+  const oldHash = localStorage.getItem(hashKey) || '';
+  try {
+    // 无缓存拉取当前页面完整源码
+    const res = await fetch(`${location.href}?_t=${Date.now()}`, { cache: 'no-store' });
+    const htmlText = await res.text();
+    // 截取前2000字符生成简易标识，减少计算量
+    const pageMark = btoa(htmlText.slice(0, 2000));
+    if (pageMark !== oldHash) {
+      localStorage.setItem(hashKey, pageMark);
+      location.reload(true);
+    }
+  } catch (e) {}
+});
+</script>
